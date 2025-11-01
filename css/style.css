@@ -1,0 +1,55 @@
+/* Base typography and layout */
+padding: 0.4rem 0.7rem;
+border: 1px solid #cfd8dc;
+border-radius: 6px;
+text-decoration: none;
+color: var(--brand);
+font-weight: 600; /* styling change */
+}
+
+
+nav a[aria-current="page"] {
+background: var(--brand);
+color: #fff;
+}
+
+
+main h1 { font-size: 1.75rem; }
+main h2 { font-size: 1.25rem; color: var(--ink-muted); }
+
+
+figure { margin: 0; }
+figcaption { font-size: 0.9rem; color: #555; }
+
+
+footer {
+margin-top: 2rem;
+padding-top: 1rem;
+border-top: 2px solid #e5e5ee;
+font-size: 0.95rem;
+}
+
+
+/* Utility classes */
+.lead { font-size: 1.1rem; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.bold { font-weight: 700; }
+
+
+/* Unique layout for movies.html */
+.grid-2 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+}
+@media (max-width: 760px) {
+.grid-2 { grid-template-columns: 1fr; }
+}
+
+
+.card {
+background: #fafafe;
+border: 1px solid #ececf6;
+border-radius: 8px;
+padding: 1rem;
+}
